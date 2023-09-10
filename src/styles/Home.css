@@ -1,0 +1,385 @@
+main{
+    font-family: var(--font-one);
+}
+main #landing {
+    background-color: var(--background);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: center;
+    padding: 50px 5%;
+}
+main #landing img{
+    width: 100%;
+    animation: main 10s linear infinite;
+}
+@keyframes main{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    1000%{
+        transform: translateY(0);
+    }
+}
+main #landing .content p{
+    color: var(--tertiary-color);
+    font-size: 20px;
+    font-weight: 900;
+}
+main #landing .content h2{
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--primary-color-dark);
+    margin-top: 20px;
+}
+main #landing .content h5{
+    color: var(--black-color);
+    margin-top: 30px;
+    font-size: 20px;
+}
+.btns{
+    display: flex;
+    gap: 3rem;
+    margin-top: 30px;
+    align-items: center;
+}
+.btns .start button{
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: var(--white-color);
+    background-color: var(--tertiary-color-dark);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 30px 0 var(--secondary-color);
+    cursor: pointer;
+    transition: 200ms ease;
+}
+.btns .start button:hover{
+    background-color: var(--tertiary-color);
+    transform: scale(1.1);
+}
+.btns .video a{
+    display: flex;
+    gap: 2rem;
+    text-decoration: none;
+}
+.btns .video i{
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin-left: 8px;
+}
+.btns .video .icon{
+    background-color: var(--primary-color-dark);
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    transition: 300ms ease;
+    justify-content: center;
+}
+.btns .video .icon:hover{
+    box-shadow: 0 0 20px 5px var(--primary-color);
+}
+.btns .video button{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--black-color);
+    transition: 300ms ease;
+}
+.btns .video button:hover{
+    cursor: pointer;
+    color: var(--primary-color-dark);
+}
+main #landing .image{
+    text-align: center;
+}
+main #landing .image img{
+    border-radius: 0 30%;
+    width: 80%;
+    aspect-ratio: 0.9;
+    object-fit: cover;
+    border: solid 15px var(--primary-color);
+}
+#started{
+    padding: 30px 5%;
+    background-color: var(--background);
+}
+#started .started{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+#started .image{
+    text-align: center;
+}
+#started img{
+    width: 80%;
+    aspect-ratio: 0.9;
+    object-fit: cover;
+    border-radius: 0 30%;
+    border: solid 20px var(--primary-color);
+    animation: start 10s linear infinite;
+}
+@keyframes start{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.title{
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:  11px 11px 22px #bcbcbc,
+             -11px -11px 22px #ffffff;
+}
+.title p{
+    color: var(--tertiary-color);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 800;
+}
+.title h3{
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--primary-color-dark);
+    margin-top: 20px;
+}
+.title .lines{
+    display: flex;
+    gap: 1rem;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.title .line{
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+}
+.title .shape{
+    width: 20px;
+    transform: rotate(45deg);
+    aspect-ratio: 1;
+    background-color: var(--secondary-color);
+}
+#started .started .content .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+#started .started .content .cards .card{
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: -11px -11px 22px #ffffff,
+                11px 11px 22px #bcbcbc;
+                transition: 500ms ease;
+}
+#started .started .content .cards .card i{
+    background-color: var(--white-color);
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 10px;
+    color: var(--tertiary-color-dark);
+    margin-bottom: 20px;
+}
+#started .started .content .cards .card h3{
+    color: var(--primary-color-dark);
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+#started .started .content .cards .card p{
+    color-scheme: var(--black-color);
+    font-size: 15px;
+    font-weight: 600;
+}
+#started .started .content .cards .card:hover{
+    transform: scale(1.1);
+}
+#learn{
+    background-color: var(--background);
+    padding: 30px 5%;
+}
+#learn img{
+    width: 80%;
+    aspect-ratio: 0.9;
+    object-fit: cover;
+    border: solid 20px var(--primary-color);
+    border-radius: 0 30%;
+    animation: start 10s linear infinite;
+}
+#learn .learn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    align-items: center;
+    margin-top: 30px;
+}
+#learn .learn .image{
+    text-align: center;
+}
+#learn .learn .content h3{
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+#learn .learn .content h3 span{
+    color: var(--secondary-color);
+}
+#learn .learn .content p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+}
+#price{
+    padding: 30px 5% 50px 5%;
+    background-color: var(--background);
+}
+#price .title{
+    width: 100%;
+}
+#price .title .extra{
+    text-transform: none;
+    color: var(--black-color);
+}
+#price .cards{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    margin-bottom: 40px;
+}
+#price .cards .card{
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#price .cards .card ul{
+    list-style: none;
+}
+#price .cards .card h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: var(--tertiary-color-dark);
+    margin-bottom: 15px;
+}
+#price .cards .card h4{
+    color: var(--black-color);
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+#price .cards .card h4 span{
+    color: var(--primary-color);
+    font-size: 30px;
+}
+#price .cards .card .line{
+    width: 75%;
+    height: 3px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#price .cards .card ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 20px 0;
+}
+#price .cards .card ul li{
+    color: var(--black-color);
+    font-size: 17px;
+    font-weight: 600;
+}
+#price .cards .card ul .fa-circle-check{
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+#price .cards .card ul .fa-circle-xmark{
+    font-size: 20px;
+    color: var(--tertiary-color);
+}
+#price .cards .card button:hover{
+    transform: scale(1.1);
+}
+#price .cards .card button{
+    padding: 15px 30px;
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: var(--secondary-color);
+    border: solid 2px var(--secondary-color);
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 300ms ease;
+}
+#price .cards .premium{
+    background-color: var(--primary-color-dark);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 10px var(--secondary-color);
+}
+#price .cards .premium h4 span{
+    color: var(--white-color);
+}
+#price .cards .premium button{
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+#price .cards .premium ul li{
+    color: var(--white-color);
+}
+
+
+/* testimonial section */
+
+
+/* #social{
+    padding: 30px 5%;
+    background-color: var(--background);
+}
+#social .title{
+    width: 100%;
+    text-align: left;
+    overflow-x: scroll;
+}
+#social .title .lines{
+    justify-content: flex-start;
+}
+#social img{
+    width: 100%;
+}
+#social .cards{
+    display: flex;
+} */
+
+
+
+/* testimonial section */
+
+

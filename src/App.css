@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+:root{
+
+  /* colors */
+  --primary-color: #9ADCFF;
+  --primary-color-dark: #6ec8f8;
+  --secondary-color: #0084ff;
+  --secondary-color-dark: #0070d8;
+  --tertiary-color: #FF8AAE;
+  --tertiary-color-dark: #E966A0;
+  --white-color: #f9f9f9;
+  --black-color: #272829;
+
+  --background: #d9eef8;
+
+
+
+  /* fonts family */
+  --font-one: 'Mulish', sans-serif;
+  --font-two: 'Noto Serif Display', serif;
+
+
+
+  /* transitions */
+  --trans-fast: 250ms ease;
+  --trans-slow: 500ms ease;
+
+
+  /* border */
+  --border-sm: 4px;
+  --border-md: 7px;
+  --border-lg: 10px;
+
+
+  /* fonts size */
+  --font-size-sm: 14px;
+  --font-size-md: 17px;
+  --font-size-bg: 20px;
+
+
+  /* scales */
+  --scale-sm: scale(1.05);
+  --scale-md: scale(1.1);
+  --scale-bg: scale(1.15);
+}
+::-webkit-scrollbar{
+  width: 12px;
+  background-color: var(--primary-color-dark);
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(var(--white-color), var(--tertiary-color));
+  border-radius: 10px;
+}

@@ -1,0 +1,64 @@
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 5%;
+    align-items: center;
+    width: 100%;
+    font-family: var(--font-one);
+    font-weight: 800;
+    background-color: transparent;
+    font-size: var(--font-size-md);
+    position: fixed;
+    z-index: 1000000;
+    transition: 1s ease;
+}
+header.sticky{
+    padding: 10px 2.5%;
+    background-color: var(--white-color);
+    box-shadow: 0 10px 100px 2px var(--black-color);
+}
+header.sticky ul li a{
+    color: var(--black-color);
+}
+header img{
+    height: 50px;
+    cursor: pointer;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+header ul li a{
+    color: var(--tertiary-color);
+    transition: 300ms ease;
+    text-decoration: none;
+}
+header ul li a:hover{
+    color: var(--primary-color-dark);
+}
+header #toggler, label{
+    display: none;
+}
+header label i{
+    color: var(--primary-color);
+    font-size: 30px;
+}
+@media screen AND (max-width: 650px) {
+    header .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    header label{
+        display: inline-flex;
+    }
+    header #toggler:checked~.menu{
+        max-height: 100%;
+    }
+    header ul{
+        flex-direction: column;
+        padding: 20px;
+    }
+}
